@@ -1,4 +1,4 @@
-const TECHS = ["Flutter", "Dart", "Provider", "SQLite", "Node.js", "Express", "PostgreSQL", "JWT"];
+const TECHS = ["Flutter", "Dart", "Provider", "SQLite", "Kotlin", "Google Play Billing", "Node.js", "Express", "PostgreSQL", "JWT", "nginx", "Cloudflare"];
 
 export default function TechStack() {
   return (

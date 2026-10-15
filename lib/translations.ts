@@ -67,12 +67,22 @@ export const translations = {
         {
           icon: "🔒",
           title: "Seguridad",
-          desc: "Bloqueo biométrico, almacenamiento seguro y autenticación propia contra un backend en Node.js + PostgreSQL.",
+          desc: "Login con huella, almacenamiento cifrado y autenticación propia contra un backend en Node.js + PostgreSQL. Sin conexión, el login pasa solo a modo local.",
+        },
+        {
+          icon: "🧮",
+          title: "Calculadora de Lote",
+          desc: "Lote exacto según capital, % de riesgo y distancia al Stop Loss. En Android, burbuja flotante encima de MT4/MT5 o TradingView y widget de inicio (Kotlin + overlay).",
         },
         {
           icon: "📤",
           title: "Exportación",
           desc: "Exporta tu diario a CSV y genera reportes en PDF listos para compartir.",
+        },
+        {
+          icon: "🎯",
+          title: "ZenScore",
+          desc: "Nota de 0 a 100 por cuenta que combina rentabilidad (profit factor) y disciplina: riesgo y stop loss, lotaje consistente, sobreoperación/revancha y drawdown. Una sola implementación en Dart para la app y el perfil público, con tests.",
         },
         {
           icon: "🌐",
@@ -90,13 +100,13 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "Perfil público verificado con el reporte de tu broker"],
+          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker"],
         },
         {
           icon: "📈",
           name: "Pro",
           featured: false,
-          features: ["Todo lo del plan Free", "Analíticas avanzadas de tu rendimiento"],
+          features: ["Todo lo del plan Free", "Analíticas avanzadas de tu rendimiento", "Calculadora de lote ilimitada, burbuja flotante y widget"],
         },
         {
           icon: "🏅",
@@ -110,7 +120,6 @@ export const translations = {
           featured: false,
           features: [
             "Todo lo de Elite",
-            "Conexión de solo lectura con tu broker",
             "Notas ilimitadas",
             "Seguimiento emocional por trade",
             "Análisis multi-timeframe",
@@ -142,6 +151,7 @@ export const translations = {
             { text: "Diario de trading ilimitado", own: true },
             { text: "Cuentas y desafíos de prop firm", own: true },
             { text: "Modo offline (SQLite)", own: true },
+            { text: "ZenScore (rentabilidad + disciplina)", own: true },
             { text: "Perfil verificado con reporte del broker", own: true },
           ],
         },
@@ -156,6 +166,7 @@ export const translations = {
             { text: "Curva de equity y mapa de calor", own: true },
             { text: "Rendimiento por confluencia", own: true },
             { text: "Ganancia por hora del día", own: true },
+            { text: "Calculadora de lote ilimitada + burbuja y widget", own: true },
           ],
         },
         {
@@ -179,7 +190,6 @@ export const translations = {
           period: "/mes",
           features: [
             { text: "Todo lo de Elite", own: false },
-            { text: "Conexión de solo lectura con el broker", own: true },
             { text: "Notas ilimitadas", own: true },
             { text: "Seguimiento emocional por trade", own: true },
             { text: "Análisis multi-timeframe", own: true },
@@ -189,7 +199,7 @@ export const translations = {
       ],
       flowTitle: "Reportar un pago, paso a paso",
       flowNote:
-        "La revisión es manual — no hay conexión directa con Binance ni con la wallet, así que un administrador confirma cada pago a mano.",
+        "Aplica a la web y a la APK directa (en la versión de Google Play se paga con Google Play). La revisión es manual — no hay conexión directa con Binance ni con la wallet, así que un administrador confirma cada pago a mano.",
       steps: [
         {
           title: "Elige tu plan",
@@ -303,12 +313,22 @@ export const translations = {
         {
           icon: "🔒",
           title: "Security",
-          desc: "Biometric lock, secure storage, and custom authentication against a Node.js + PostgreSQL backend.",
+          desc: "Fingerprint login, encrypted storage, and custom authentication against a Node.js + PostgreSQL backend. Offline, login switches to local mode automatically.",
+        },
+        {
+          icon: "🧮",
+          title: "Lot Size Calculator",
+          desc: "Exact lot size from capital, risk % and Stop Loss distance. On Android, a floating bubble over MT4/MT5 or TradingView and a home screen widget (Kotlin + overlay).",
         },
         {
           icon: "📤",
           title: "Export",
           desc: "Export your journal to CSV and generate ready-to-share PDF reports.",
+        },
+        {
+          icon: "🎯",
+          title: "ZenScore",
+          desc: "A 0–100 score per account combining profitability (profit factor) and discipline: risk and stop loss, consistent lot sizing, overtrading/revenge trading, and drawdown. One Dart implementation shared by the app and the public profile, with tests.",
         },
         {
           icon: "🌐",
@@ -326,13 +346,13 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "Public profile verified with your broker report"],
+          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report"],
         },
         {
           icon: "📈",
           name: "Pro",
           featured: false,
-          features: ["Everything in Free", "Advanced performance analytics"],
+          features: ["Everything in Free", "Advanced performance analytics", "Unlimited lot calculator, floating bubble and widget"],
         },
         {
           icon: "🏅",
@@ -346,7 +366,6 @@ export const translations = {
           featured: false,
           features: [
             "Everything in Elite",
-            "Read-only connection to your broker",
             "Unlimited notes",
             "Emotional tracking per trade",
             "Multi-timeframe analysis",
@@ -378,6 +397,7 @@ export const translations = {
             { text: "Unlimited trading journal", own: true },
             { text: "Accounts and prop firm challenges", own: true },
             { text: "Offline mode (SQLite)", own: true },
+            { text: "ZenScore (profitability + discipline)", own: true },
             { text: "Profile verified with broker report", own: true },
           ],
         },
@@ -392,6 +412,7 @@ export const translations = {
             { text: "Equity curve and heatmap", own: true },
             { text: "Performance by confluence", own: true },
             { text: "Profit by hour of day", own: true },
+            { text: "Unlimited lot calculator + bubble and widget", own: true },
           ],
         },
         {
@@ -415,7 +436,6 @@ export const translations = {
           period: "/mo",
           features: [
             { text: "Everything in Elite", own: false },
-            { text: "Read-only broker connection", own: true },
             { text: "Unlimited notes", own: true },
             { text: "Emotional tracking per trade", own: true },
             { text: "Multi-timeframe analysis", own: true },
@@ -425,7 +445,7 @@ export const translations = {
       ],
       flowTitle: "Reporting a payment, step by step",
       flowNote:
-        "Review is manual — there's no direct connection to Binance or the wallet, so an admin confirms every payment by hand.",
+        "Applies to the web and the direct APK (the Google Play version is paid through Google Play). Review is manual — there's no direct connection to Binance or the wallet, so an admin confirms every payment by hand.",
       steps: [
         {
           title: "Choose your plan",
