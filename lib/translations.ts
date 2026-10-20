@@ -89,6 +89,11 @@ export const translations = {
           title: "Perfil Público",
           desc: "Comparte tu progreso con un perfil público opcional. Verificado con datos del broker: gratis con el reporte de MT4/MT5, o automático conectando tu cuenta en Elite y Unlimited.",
         },
+        {
+          icon: "🧪",
+          title: "Demo y Backtesting",
+          desc: "Cuentas Real, Fondeada, Demo y Backtest que nunca se mezclan: el dashboard y las analíticas muestran un tipo a la vez. Un coach evalúa la práctica (¿listo para pasar a real?, ¿la estrategia tiene ventaja?) y, en Elite y Unlimited, el perfil público la muestra con una etiqueta de práctica que decide el servidor y no se puede quitar.",
+        },
       ],
     },
     pricing: {
@@ -100,7 +105,7 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker"],
+          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach"],
         },
         {
           icon: "📈",
@@ -112,7 +117,7 @@ export const translations = {
           icon: "🏅",
           name: "Elite",
           featured: true,
-          features: ["Todo lo de Pro", "Logros y gamificación", "Exportar reportes a PDF", "Conexión de solo lectura con tu broker"],
+          features: ["Todo lo de Pro", "Logros y gamificación", "Exportar reportes a PDF", "Conexión de solo lectura con tu broker", "Perfil público de demo y backtesting, con etiqueta de práctica"],
         },
         {
           icon: "♾️",
@@ -153,6 +158,7 @@ export const translations = {
             { text: "Modo offline (SQLite)", own: true },
             { text: "ZenScore (rentabilidad + disciplina)", own: true },
             { text: "Perfil verificado con reporte del broker", own: true },
+            { text: "Cuentas demo y backtest separadas + coach", own: true },
           ],
         },
         {
@@ -181,6 +187,7 @@ export const translations = {
             { text: "Logros y gamificación", own: true },
             { text: "Exportar reportes a PDF", own: true },
             { text: "Conexión de solo lectura con el broker", own: true },
+            { text: "Perfil público de demo y backtest (etiquetado)", own: true },
           ],
         },
         {
@@ -335,6 +342,11 @@ export const translations = {
           title: "Public Profile",
           desc: "Share your progress with an optional public profile. Verified with broker data: free with your MT4/MT5 report, or automatic by connecting your account on Elite and Unlimited.",
         },
+        {
+          icon: "🧪",
+          title: "Demo & Backtesting",
+          desc: "Real, Funded, Demo and Backtest accounts that never mix: the dashboard and analytics show one type at a time. A coach grades practice (ready to go live? does the strategy have an edge?) and, on Elite and Unlimited, the public profile shows it with a practice label set by the server that can't be removed.",
+        },
       ],
     },
     pricing: {
@@ -346,7 +358,7 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report"],
+          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach"],
         },
         {
           icon: "📈",
@@ -358,7 +370,7 @@ export const translations = {
           icon: "🏅",
           name: "Elite",
           featured: true,
-          features: ["Everything in Pro", "Achievements and gamification", "Export PDF reports", "Read-only connection to your broker"],
+          features: ["Everything in Pro", "Achievements and gamification", "Export PDF reports", "Read-only connection to your broker", "Public profile for demo and backtesting, with a practice label"],
         },
         {
           icon: "♾️",
@@ -399,6 +411,7 @@ export const translations = {
             { text: "Offline mode (SQLite)", own: true },
             { text: "ZenScore (profitability + discipline)", own: true },
             { text: "Profile verified with broker report", own: true },
+            { text: "Separate demo and backtest accounts + coach", own: true },
           ],
         },
         {
@@ -427,6 +440,7 @@ export const translations = {
             { text: "Achievements and gamification", own: true },
             { text: "Export PDF reports", own: true },
             { text: "Read-only broker connection", own: true },
+            { text: "Public demo and backtest profile (labeled)", own: true },
           ],
         },
         {
