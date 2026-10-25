@@ -105,13 +105,13 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach"],
+          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach", "Consejo de trading diario"],
         },
         {
           icon: "📈",
           name: "Pro",
           featured: false,
-          features: ["Todo lo del plan Free", "Analíticas avanzadas de tu rendimiento", "Calculadora de lote ilimitada, burbuja flotante y widget"],
+          features: ["Todo lo del plan Free", "Analíticas avanzadas de tu rendimiento", "Calculadora de lote ilimitada, burbuja flotante y widget", "Avisos por días sin practicar u operar"],
         },
         {
           icon: "🏅",
@@ -159,6 +159,7 @@ export const translations = {
             { text: "ZenScore (rentabilidad + disciplina)", own: true },
             { text: "Perfil verificado con reporte del broker", own: true },
             { text: "Cuentas demo y backtest separadas + coach", own: true },
+            { text: "Consejo de trading diario (notificación)", own: true },
           ],
         },
         {
@@ -173,6 +174,7 @@ export const translations = {
             { text: "Rendimiento por confluencia", own: true },
             { text: "Ganancia por hora del día", own: true },
             { text: "Calculadora de lote ilimitada + burbuja y widget", own: true },
+            { text: "Avisos a los 2, 7 y 14 días sin operar", own: true },
           ],
         },
         {
@@ -358,13 +360,13 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach"],
+          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach", "Daily trading tip"],
         },
         {
           icon: "📈",
           name: "Pro",
           featured: false,
-          features: ["Everything in Free", "Advanced performance analytics", "Unlimited lot calculator, floating bubble and widget"],
+          features: ["Everything in Free", "Advanced performance analytics", "Unlimited lot calculator, floating bubble and widget", "Alerts after days without practicing or trading"],
         },
         {
           icon: "🏅",
@@ -412,6 +414,7 @@ export const translations = {
             { text: "ZenScore (profitability + discipline)", own: true },
             { text: "Profile verified with broker report", own: true },
             { text: "Separate demo and backtest accounts + coach", own: true },
+            { text: "Daily trading tip (notification)", own: true },
           ],
         },
         {
@@ -426,6 +429,7 @@ export const translations = {
             { text: "Performance by confluence", own: true },
             { text: "Profit by hour of day", own: true },
             { text: "Unlimited lot calculator + bubble and widget", own: true },
+            { text: "Alerts at 2, 7 and 14 days without trading", own: true },
           ],
         },
         {
