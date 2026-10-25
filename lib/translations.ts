@@ -94,6 +94,11 @@ export const translations = {
           title: "Demo y Backtesting",
           desc: "Cuentas Real, Fondeada, Demo y Backtest que nunca se mezclan: el dashboard y las analíticas muestran un tipo a la vez. Un coach evalúa la práctica (¿listo para pasar a real?, ¿la estrategia tiene ventaja?) y, en Elite y Unlimited, el perfil público la muestra con una etiqueta de práctica que decide el servidor y no se puede quitar.",
         },
+        {
+          icon: "🔔",
+          title: "Recordatorios de práctica",
+          desc: "Notificaciones locales programadas en el teléfono (sin servidor): avisos a los 2, 7 y 14 días sin registrar en backtest, demo o real (fondeada: 25, por la regla de inactividad de las firmas), con días basados en estudios de hábitos y pérdida de habilidades. Se reprograman al abrir la app o registrar un trade. Consejo diario para todos; los avisos, desde Pro.",
+        },
       ],
     },
     pricing: {
@@ -348,6 +353,11 @@ export const translations = {
           icon: "🧪",
           title: "Demo & Backtesting",
           desc: "Real, Funded, Demo and Backtest accounts that never mix: the dashboard and analytics show one type at a time. A coach grades practice (ready to go live? does the strategy have an edge?) and, on Elite and Unlimited, the public profile shows it with a practice label set by the server that can't be removed.",
+        },
+        {
+          icon: "🔔",
+          title: "Practice reminders",
+          desc: "Local notifications scheduled on the phone (no server): alerts at 2, 7 and 14 days without logging in backtest, demo or live (funded: 25, because of prop firms' inactivity rules), with days based on habit and skill-decay research. They are rescheduled when the app opens or a trade is logged. Daily tip for everyone; alerts from Pro up.",
         },
       ],
     },
