@@ -82,7 +82,7 @@ export const translations = {
         {
           icon: "🎯",
           title: "ZenScore",
-          desc: "Nota de 0 a 100 por cuenta que combina rentabilidad (profit factor) y disciplina: riesgo y stop loss, lotaje consistente, sobreoperación/revancha y drawdown. Una sola implementación en Dart para la app y el perfil público, con tests.",
+          desc: "Nota de 0 a 100 por cuenta que combina rentabilidad (profit factor) y disciplina: riesgo y stop loss, lotaje consistente, cumplimiento del plan de trading y drawdown. Una sola implementación en Dart para la app y el perfil público, con tests.",
         },
         {
           icon: "🌐",
@@ -99,6 +99,16 @@ export const translations = {
           title: "Recordatorios de práctica",
           desc: "Notificaciones locales programadas en el teléfono (sin servidor): avisos a los 2, 7 y 14 días sin registrar en backtest, demo o real (fondeada: 25, por la regla de inactividad de las firmas), con días basados en estudios de hábitos y pérdida de habilidades. Se reprograman al abrir la app o registrar un trade. Consejo diario para todos; los avisos, desde Pro.",
         },
+        {
+          icon: "📏",
+          title: "Plan de Trading",
+          desc: "Reglas contra la sobreoperación para todas las cuentas: operaciones por día, % de riesgo, pérdida diaria máxima y parar tras pérdidas seguidas. Al registrar un trade que rompe el plan avisa sin bloquear; el coach mide el cumplimiento (últimas 50 operaciones, por fecha del gráfico en backtest) y el ZenScore lo penaliza. Plan recomendado para todos, personalizable en Elite; se guarda en la nube y el perfil público usa el mismo plan.",
+        },
+        {
+          icon: "🔗",
+          title: "Notas relacionadas",
+          desc: "Una nota se relaciona con operaciones de cualquier cuenta (real, fondeada, demo, backtest) desde un selector con filtros, y muestra su resumen (cantidad, % ganadas, resultado). Funciona offline: los ids locales se remapean al subir los trades.",
+        },
       ],
     },
     pricing: {
@@ -110,7 +120,7 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach", "Consejo de trading diario"],
+          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach", "Consejo de trading diario", "Plan de trading recomendado con avisos de sobreoperación"],
         },
         {
           icon: "📈",
@@ -122,7 +132,7 @@ export const translations = {
           icon: "🏅",
           name: "Elite",
           featured: true,
-          features: ["Todo lo de Pro", "Logros y gamificación", "Exportar reportes a PDF", "Conexión de solo lectura con tu broker", "Perfil público de demo y backtesting, con etiqueta de práctica"],
+          features: ["Todo lo de Pro", "Logros y gamificación", "Exportar reportes a PDF", "Conexión de solo lectura con tu broker", "Perfil público de demo y backtesting, con etiqueta de práctica", "Plan de trading personalizado (cuenta en tu ZenScore)"],
         },
         {
           icon: "♾️",
@@ -165,6 +175,7 @@ export const translations = {
             { text: "Perfil verificado con reporte del broker", own: true },
             { text: "Cuentas demo y backtest separadas + coach", own: true },
             { text: "Consejo de trading diario (notificación)", own: true },
+            { text: "Plan de trading recomendado + avisos", own: true },
           ],
         },
         {
@@ -195,6 +206,7 @@ export const translations = {
             { text: "Exportar reportes a PDF", own: true },
             { text: "Conexión de solo lectura con el broker", own: true },
             { text: "Perfil público de demo y backtest (etiquetado)", own: true },
+            { text: "Plan de trading personalizado", own: true },
           ],
         },
         {
@@ -342,7 +354,7 @@ export const translations = {
         {
           icon: "🎯",
           title: "ZenScore",
-          desc: "A 0–100 score per account combining profitability (profit factor) and discipline: risk and stop loss, consistent lot sizing, overtrading/revenge trading, and drawdown. One Dart implementation shared by the app and the public profile, with tests.",
+          desc: "A 0–100 score per account combining profitability (profit factor) and discipline: risk and stop loss, consistent lot sizing, trading-plan compliance, and drawdown. One Dart implementation shared by the app and the public profile, with tests.",
         },
         {
           icon: "🌐",
@@ -359,6 +371,16 @@ export const translations = {
           title: "Practice reminders",
           desc: "Local notifications scheduled on the phone (no server): alerts at 2, 7 and 14 days without logging in backtest, demo or live (funded: 25, because of prop firms' inactivity rules), with days based on habit and skill-decay research. They are rescheduled when the app opens or a trade is logged. Daily tip for everyone; alerts from Pro up.",
         },
+        {
+          icon: "📏",
+          title: "Trading Plan",
+          desc: "Anti-overtrading rules for every account: trades per day, % risk, max daily loss and stopping after a losing streak. Logging a trade that breaks the plan warns without blocking; the coach measures compliance (last 50 trades, by chart date in backtest) and the ZenScore penalizes it. Recommended plan for everyone, customizable on Elite; stored in the cloud and the public profile uses the same plan.",
+        },
+        {
+          icon: "🔗",
+          title: "Linked notes",
+          desc: "A note links to trades from any account (live, funded, demo, backtest) through a filterable picker and shows their summary (count, win rate, result). Works offline: local ids are remapped when trades upload.",
+        },
       ],
     },
     pricing: {
@@ -370,7 +392,7 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach", "Daily trading tip"],
+          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach", "Daily trading tip", "Recommended trading plan with overtrading alerts"],
         },
         {
           icon: "📈",
@@ -382,7 +404,7 @@ export const translations = {
           icon: "🏅",
           name: "Elite",
           featured: true,
-          features: ["Everything in Pro", "Achievements and gamification", "Export PDF reports", "Read-only connection to your broker", "Public profile for demo and backtesting, with a practice label"],
+          features: ["Everything in Pro", "Achievements and gamification", "Export PDF reports", "Read-only connection to your broker", "Public profile for demo and backtesting, with a practice label", "Custom trading plan (counts toward your ZenScore)"],
         },
         {
           icon: "♾️",
@@ -425,6 +447,7 @@ export const translations = {
             { text: "Profile verified with broker report", own: true },
             { text: "Separate demo and backtest accounts + coach", own: true },
             { text: "Daily trading tip (notification)", own: true },
+            { text: "Recommended trading plan + alerts", own: true },
           ],
         },
         {
@@ -455,6 +478,7 @@ export const translations = {
             { text: "Export PDF reports", own: true },
             { text: "Read-only broker connection", own: true },
             { text: "Public demo and backtest profile (labeled)", own: true },
+            { text: "Custom trading plan", own: true },
           ],
         },
         {
