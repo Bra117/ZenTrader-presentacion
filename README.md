@@ -10,7 +10,7 @@ Sitio de presentación de **ZenTrader**, una app para traders que reúne en un s
 
 ## Qué muestra
 
-- Las funciones principales: diario de trading, desafíos de prop firm, analítica, coaching, recordatorios de práctica, plan de trading y notas relacionadas.
+- Las funciones principales: diario de trading, desafíos de prop firm, analítica, coaching, recordatorios de práctica, plan de trading, estrategias y notas relacionadas.
 - Un gráfico de velas animado y una demo del **Quick Log** (registrar un trade en segundos).
 - El concepto *offline-first*: modo local sin registro y modo membresía con sincronización.
 - Los planes de membresía y una guía para reportar pagos (`/guia/`).

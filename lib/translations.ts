@@ -105,6 +105,11 @@ export const translations = {
           desc: "Reglas contra la sobreoperación para todas las cuentas: operaciones por día, % de riesgo, pérdida diaria máxima y parar tras pérdidas seguidas. Al registrar un trade que rompe el plan avisa sin bloquear; el coach mide el cumplimiento (últimas 50 operaciones, por fecha del gráfico en backtest) y el ZenScore lo penaliza. Plan recomendado para todos, personalizable en Elite; se guarda en la nube y el perfil público usa el mismo plan.",
         },
         {
+          icon: "🧠",
+          title: "Mis Estrategias",
+          desc: "Estrategias con nombre, descripción y checklist de entrada reordenable; al registrar un trade se elige (o se crea al momento), se marca el checklist y la app califica la ejecución de A a D. Estadísticas por estrategia en todas las cuentas desde Pro, y aviso de operaciones registradas sin estrategia. El servidor valida nombres únicos y, al renombrar, actualiza los trades.",
+        },
+        {
           icon: "🔗",
           title: "Notas relacionadas",
           desc: "Una nota se relaciona con operaciones de cualquier cuenta (real, fondeada, demo, backtest) desde un selector con filtros, y muestra su resumen (cantidad, % ganadas, resultado). Funciona offline: los ids locales se remapean al subir los trades.",
@@ -120,13 +125,13 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach", "Consejo de trading diario", "Plan de trading recomendado con avisos de sobreoperación"],
+          features: ["Diario de trading ilimitado", "Cuentas y seguimiento de desafíos de prop firm", "ZenScore de rentabilidad y disciplina", "Perfil público verificado con el reporte de tu broker", "Cuentas demo y backtesting separadas, con coach", "Consejo de trading diario", "Plan de trading recomendado con avisos de sobreoperación", "Tus estrategias con su checklist"],
         },
         {
           icon: "📈",
           name: "Pro",
           featured: false,
-          features: ["Todo lo del plan Free", "Analíticas avanzadas de tu rendimiento", "Calculadora de lote ilimitada, burbuja flotante y widget", "Avisos por días sin practicar u operar"],
+          features: ["Todo lo del plan Free", "Analíticas avanzadas de tu rendimiento", "Calculadora de lote ilimitada, burbuja flotante y widget", "Avisos por días sin practicar u operar", "Estadísticas por estrategia"],
         },
         {
           icon: "🏅",
@@ -176,6 +181,7 @@ export const translations = {
             { text: "Cuentas demo y backtest separadas + coach", own: true },
             { text: "Consejo de trading diario (notificación)", own: true },
             { text: "Plan de trading recomendado + avisos", own: true },
+            { text: "Estrategias con checklist", own: true },
           ],
         },
         {
@@ -191,6 +197,7 @@ export const translations = {
             { text: "Ganancia por hora del día", own: true },
             { text: "Calculadora de lote ilimitada + burbuja y widget", own: true },
             { text: "Avisos a los 2, 7 y 14 días sin operar", own: true },
+            { text: "Estadísticas por estrategia", own: true },
           ],
         },
         {
@@ -377,6 +384,11 @@ export const translations = {
           desc: "Anti-overtrading rules for every account: trades per day, % risk, max daily loss and stopping after a losing streak. Logging a trade that breaks the plan warns without blocking; the coach measures compliance (last 50 trades, by chart date in backtest) and the ZenScore penalizes it. Recommended plan for everyone, customizable on Elite; stored in the cloud and the public profile uses the same plan.",
         },
         {
+          icon: "🧠",
+          title: "My Strategies",
+          desc: "Strategies with a name, description and a reorderable entry checklist; logging a trade picks one (or creates it on the spot), ticks the checklist and grades execution A to D. Per-strategy stats across every account from Pro up, plus a warning for trades logged without a strategy. The server enforces unique names and renames update existing trades.",
+        },
+        {
           icon: "🔗",
           title: "Linked notes",
           desc: "A note links to trades from any account (live, funded, demo, backtest) through a filterable picker and shows their summary (count, win rate, result). Works offline: local ids are remapped when trades upload.",
@@ -392,13 +404,13 @@ export const translations = {
           icon: "🔓",
           name: "Free",
           featured: false,
-          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach", "Daily trading tip", "Recommended trading plan with overtrading alerts"],
+          features: ["Unlimited trading journal", "Accounts and prop firm challenge tracking", "ZenScore for profitability and discipline", "Public profile verified with your broker report", "Separate demo and backtesting accounts, with coach", "Daily trading tip", "Recommended trading plan with overtrading alerts", "Your strategies with their checklist"],
         },
         {
           icon: "📈",
           name: "Pro",
           featured: false,
-          features: ["Everything in Free", "Advanced performance analytics", "Unlimited lot calculator, floating bubble and widget", "Alerts after days without practicing or trading"],
+          features: ["Everything in Free", "Advanced performance analytics", "Unlimited lot calculator, floating bubble and widget", "Alerts after days without practicing or trading", "Per-strategy stats"],
         },
         {
           icon: "🏅",
@@ -448,6 +460,7 @@ export const translations = {
             { text: "Separate demo and backtest accounts + coach", own: true },
             { text: "Daily trading tip (notification)", own: true },
             { text: "Recommended trading plan + alerts", own: true },
+            { text: "Strategies with checklist", own: true },
           ],
         },
         {
@@ -463,6 +476,7 @@ export const translations = {
             { text: "Profit by hour of day", own: true },
             { text: "Unlimited lot calculator + bubble and widget", own: true },
             { text: "Alerts at 2, 7 and 14 days without trading", own: true },
+            { text: "Per-strategy stats", own: true },
           ],
         },
         {
