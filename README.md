@@ -4,6 +4,7 @@ Sitio de presentación de **ZenTrader**, una app para traders que reúne en un s
 
 🌐 **En vivo:** https://zentrader.webtrader.trade
 🖥️ **Probar la app en la web:** https://zentrader.webtrader.trade/app/
+👥 **Página para usuarios:** https://zentrader-app.webtrader.trade
 📄 **Vista general del proyecto:** [ZenTrader-showcase](https://github.com/Bra117/ZenTrader-showcase)
 
 > El código fuente de la app y del backend es privado. Este repositorio contiene solo la página de presentación.
