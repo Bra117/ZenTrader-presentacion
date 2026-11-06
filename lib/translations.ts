@@ -17,6 +17,9 @@ export const translations = {
       soon: "PRÓXIMAMENTE",
       downloadTitle: "Se activa cuando la app esté publicada en las tiendas",
       tryWebBtn: "🖥️ Probar en la web",
+      storeSmall: "Disponible en",
+      storeSoon: "PRÓXIMAMENTE",
+      storeTitle: "Pronto estará publicada en Google Play",
       webPageBtn: "🌐 Página Web",
     },
     chart: {
@@ -296,6 +299,9 @@ export const translations = {
       soon: "COMING SOON",
       downloadTitle: "Activates once the app is published in the app stores",
       tryWebBtn: "🖥️ Try it on the web",
+      storeSmall: "Get it on",
+      storeSoon: "COMING SOON",
+      storeTitle: "Coming soon to Google Play",
       webPageBtn: "🌐 Website",
     },
     chart: {
