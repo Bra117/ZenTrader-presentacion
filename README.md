@@ -14,7 +14,7 @@ Sitio de presentación de **ZenTrader**, una app para traders que reúne en un s
 - Las funciones principales: diario de trading, desafíos de prop firm, analítica, coaching, recordatorios de práctica, plan de trading, estrategias y notas relacionadas.
 - Un gráfico de velas animado y una demo del **Quick Log** (registrar un trade en segundos).
 - El concepto *offline-first*: modo local sin registro y modo membresía con sincronización.
-- Los planes de membresía y una guía para reportar pagos (`/guia/`).
+- Los planes de membresía.
 - Las tecnologías con las que está construida la app.
 - Español / inglés con un botón.
 
@@ -31,7 +31,7 @@ npm run dev      # http://localhost:3000
 npm run build    # genera el sitio estático en out/
 ```
 
-Los textos (ES/EN) están en `lib/translations.ts`; los componentes, en `components/`; la guía de pagos, en `app/guia/`.
+Los textos (ES/EN) están en `lib/translations.ts`; los componentes, en `components/`.
 
 ## Publicación
 

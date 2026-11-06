@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useT } from "@/lib/LanguageContext";
 
 export default function Header() {
@@ -12,12 +11,7 @@ export default function Header() {
         <img src="/icon.png" alt="ZenTrader" />
         ZenTrader
       </div>
-      <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
-        <Link href="/guia/" style={{ fontSize: 13, color: "var(--text-dim)", textDecoration: "none" }}>
-          {t.nav.guideLink}
-        </Link>
-        <span className="badge">{t.nav.badge}</span>
-      </div>
+      <span className="badge">{t.nav.badge}</span>
     </header>
   );
 }
