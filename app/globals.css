@@ -1,13 +1,13 @@
 :root {
-  --bg: #08090b;
-  --bg-soft: #0e1114;
-  --card: #12161a;
-  --card-border: #1f2730;
+  --bg: #121212;
+  --bg-soft: #181818;
+  --card: #1e1e1e;
+  --card-border: #2c2c2c;
   --text: #eef2f4;
   --text-dim: #9aa7ad;
-  --accent: #2be6b8;
-  --accent-soft: rgba(43, 230, 184, 0.12);
-  --accent-line: rgba(43, 230, 184, 0.35);
+  --accent: #1bffff;
+  --accent-soft: rgba(27, 255, 255, 0.12);
+  --accent-line: rgba(27, 255, 255, 0.35);
   --red: #ff6b6b;
 }
 * {
@@ -19,8 +19,8 @@ body {
   padding: 0;
 }
 body {
-  background: radial-gradient(900px 500px at 15% -10%, rgba(43, 230, 184, 0.1), transparent 60%),
-    radial-gradient(700px 400px at 100% 0%, rgba(43, 230, 184, 0.06), transparent 55%), var(--bg);
+  background: radial-gradient(900px 500px at 15% -10%, rgba(27, 255, 255, 0.1), transparent 60%),
+    radial-gradient(700px 400px at 100% 0%, rgba(46, 49, 146, 0.22), transparent 55%), var(--bg);
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -73,7 +73,7 @@ header.nav {
   height: 88px;
   border-radius: 22px;
   margin-bottom: 24px;
-  box-shadow: 0 0 0 1px var(--card-border), 0 20px 60px -20px rgba(43, 230, 184, 0.35);
+  box-shadow: 0 0 0 1px var(--card-border), 0 20px 60px -20px rgba(27, 255, 255, 0.35);
 }
 .hero h1 {
   font-size: clamp(30px, 4.6vw, 48px);
@@ -112,7 +112,7 @@ header.nav {
   gap: 10px;
   margin-top: 30px;
   background: var(--accent);
-  color: #04231a;
+  color: #032628;
   border: none;
   border-radius: 14px;
   padding: 14px 26px;
@@ -248,18 +248,18 @@ header.nav {
   border-radius: 50%;
   background: var(--accent);
   margin-right: 6px;
-  box-shadow: 0 0 0 0 rgba(43, 230, 184, 0.6);
+  box-shadow: 0 0 0 0 rgba(27, 255, 255, 0.6);
   animation: pulse 1.6s infinite;
 }
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(43, 230, 184, 0.55);
+    box-shadow: 0 0 0 0 rgba(27, 255, 255, 0.55);
   }
   70% {
-    box-shadow: 0 0 0 8px rgba(43, 230, 184, 0);
+    box-shadow: 0 0 0 8px rgba(27, 255, 255, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(43, 230, 184, 0);
+    box-shadow: 0 0 0 0 rgba(27, 255, 255, 0);
   }
 }
 canvas#chart {
@@ -324,7 +324,7 @@ canvas#chart {
 }
 .switch button.active {
   background: var(--accent);
-  color: #04231a;
+  color: #032628;
 }
 
 .concept-panels {
@@ -427,10 +427,10 @@ canvas#chart {
   transform: translateY(-2px);
 }
 .qlog-buttons button.win {
-  border-color: rgba(43, 230, 184, 0.4);
+  border-color: rgba(27, 255, 255, 0.4);
 }
 .qlog-buttons button.win:hover {
-  background: rgba(43, 230, 184, 0.12);
+  background: rgba(27, 255, 255, 0.12);
 }
 .qlog-buttons button.loss {
   border-color: rgba(255, 107, 107, 0.4);
@@ -504,7 +504,7 @@ canvas#chart {
 }
 .feat:hover {
   border-color: var(--accent-line);
-  box-shadow: 0 10px 30px -14px rgba(43, 230, 184, 0.35);
+  box-shadow: 0 10px 30px -14px rgba(27, 255, 255, 0.35);
 }
 .icn {
   width: 38px;
@@ -555,7 +555,7 @@ canvas#chart {
 .plan:hover {
   transform: translateY(-8px);
   border-color: var(--accent-line);
-  box-shadow: 0 24px 48px -20px rgba(43, 230, 184, 0.4);
+  box-shadow: 0 24px 48px -20px rgba(27, 255, 255, 0.4);
 }
 .plan.featured:hover {
   transform: translateY(-10px);
@@ -571,7 +571,7 @@ canvas#chart {
   left: 50%;
   transform: translateX(-50%);
   background: var(--accent);
-  color: #04231a;
+  color: #032628;
   font-size: 11px;
   font-weight: 700;
   padding: 4px 12px;

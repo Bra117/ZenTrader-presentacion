@@ -61,8 +61,8 @@ export default function LiveCandlestickChart() {
       candles.forEach((c, i) => {
         const x = i * cw + cw / 2;
         const up = c.close >= c.open;
-        ctx!.strokeStyle = up ? "#2be6b8" : "#ff6b6b";
-        ctx!.fillStyle = up ? "rgba(43,230,184,.85)" : "rgba(255,107,107,.85)";
+        ctx!.strokeStyle = up ? "#2ee6a6" : "#ff6b6b";
+        ctx!.fillStyle = up ? "rgba(46,230,166,.85)" : "rgba(255,107,107,.85)";
         ctx!.lineWidth = 1;
         const yHigh = h - pad - (c.high - min) * scaleY;
         const yLow = h - pad - (c.low - min) * scaleY;
@@ -111,7 +111,7 @@ export default function LiveCandlestickChart() {
           <span className="live-dot" />
           XAU/USD
         </span>
-        <span className="price" style={{ color: priceColor === "up" ? "#2be6b8" : "#ff6b6b" }}>
+        <span className="price" style={{ color: priceColor === "up" ? "#2ee6a6" : "#ff6b6b" }}>
           {price.toFixed(2)}
         </span>
       </div>
