@@ -142,9 +142,9 @@ export const translations = {
       title: "Novedades",
       sub: "Las 3 últimas versiones y cómo se construyeron.",
       items: [
+        { version: "1.4.92", title: "Notas con galería y pares, ajuste de balance", points: ["Galería de imágenes por nota con límite por plan (2/5/10/15) aplicado en el servidor (multer fields + validación en PostgreSQL) y compatible con apps viejas.", "Notas ligadas a pares además de trades, y ajuste de balance por cuenta que suma al balance sin alterar winrate ni estadísticas.", "Sincronización offline (cola en SQLite) extendida a imágenes, pares y ajuste; migraciones 053–057."] },
         { version: "1.4.91", title: "Avisos de membresía y panel admin", points: ["Tarea programada en Node.js que envía avisos de vencimiento (3 días antes y al vencer) una sola vez por fecha, con columnas de control en PostgreSQL.", "Enlace profundo a la app web: tras iniciar sesión abre directo el reporte de pago.", "Panel de administración rehecho con el kit de UI propio y traducido (es/en), verificado con renders sin desbordes."] },
         { version: "1.4.90", title: "Programa de referidos", points: ["Códigos únicos por usuario generados en el servidor (Node.js + PostgreSQL) y canje en una transacción con FOR UPDATE.", "Anti-abuso: el premio de quien invita se libera al llegar a 5 trades cerrados, se bloquea el mismo device_id y hay tope anual.", "Probado de punta a punta contra la base de datos con usuarios temporales."] },
-        { version: "1.4.89", title: "Errores y sesiones", points: ["Errores guardados con un código estable (independiente del idioma), con migración de los datos viejos guardados como texto traducido.", "Análisis por sesión del mercado en UTC y métricas en R; lógica pura en Dart con tests unitarios."] },
       ],
     },
     pricing: {
@@ -325,9 +325,9 @@ export const translations = {
       title: "What's new",
       sub: "The last 3 releases and how they were built.",
       items: [
+        { version: "1.4.92", title: "Note galleries and pairs, balance adjustment", points: ["Per-note image gallery with a per-plan limit (2/5/10/15) enforced on the server (multer fields + PostgreSQL validation), backward compatible with old apps.", "Notes linked to pairs as well as trades, and a per-account balance adjustment that counts in the balance without touching win rate or stats.", "Offline sync (SQLite queue) extended to images, pairs and adjustment; migrations 053–057."] },
         { version: "1.4.91", title: "Membership reminders and admin panel", points: ["Scheduled Node.js job that sends expiry reminders (3 days before and on expiry) once per date, with tracking columns in PostgreSQL.", "Deep link into the web app: after signing in it opens the payment report directly.", "Admin panel rebuilt with the in-house UI kit and translated (es/en), verified with overflow-free renders."] },
         { version: "1.4.90", title: "Referral program", points: ["Unique per-user codes generated on the server (Node.js + PostgreSQL) and redemption in a transaction with FOR UPDATE.", "Abuse control: the inviter's reward unlocks at 5 closed trades, the same device_id is blocked and there is a yearly cap.", "Tested end to end against the database with temporary users."] },
-        { version: "1.4.89", title: "Mistakes & sessions", points: ["Mistakes stored with a stable code (language independent), migrating old data that was saved as translated text.", "Market session analysis in UTC and R-multiple metrics; pure Dart logic with unit tests."] },
       ],
     },
     pricing: {
