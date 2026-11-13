@@ -6,6 +6,7 @@ import LiveCandlestickChart from "@/components/LiveCandlestickChart";
 import ModeToggle from "@/components/ModeToggle";
 import QuickLogDemo from "@/components/QuickLogDemo";
 import FeaturesGrid from "@/components/FeaturesGrid";
+import NewsTimeline from "@/components/NewsTimeline";
 import MembershipTiers from "@/components/MembershipTiers";
 import TechStack from "@/components/TechStack";
 import { useT } from "@/lib/LanguageContext";
@@ -20,6 +21,7 @@ export default function Home() {
       <ModeToggle />
       <QuickLogDemo />
       <FeaturesGrid />
+      <NewsTimeline />
       <MembershipTiers />
       <TechStack />
       <footer>
