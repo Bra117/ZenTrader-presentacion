@@ -140,14 +140,11 @@ export const translations = {
     },
     news: {
       title: "Novedades",
-      sub: "Lo último que salió en la app (noviembre de 2026).",
+      sub: "Las 3 últimas versiones y cómo se construyeron.",
       items: [
-        { version: "1.4.90", title: "Invita y gana", points: ["Código de referido por usuario: 7 días de Pro para el invitado y para quien invita.", "El premio de quien invita llega cuando el invitado registra 5 trades (anti cuentas falsas)."] },
-        { version: "1.4.89", title: "Errores y sesiones", points: ["Cuánto cuesta cada error que marcas en tus trades.", "Resultados por sesión del mercado y en R (Pro)."] },
-        { version: "1.4.88", title: "Menú por módulos y nueva pantalla de cuenta", points: ["Análisis, Estrategia, Herramientas… con sus submódulos.", "Resumen con ZenScore arriba, coach con pestañas e historial más cerca."] },
-        { version: "1.4.85 – 1.4.87", title: "Compartir como un pro", points: ["Imagen del trade y de la revisión semanal con fondo premium, en formato chat o historia.", "PDF renovados con portada, escalera de precios y analíticas por par y por día."] },
-        { version: "1.4.81 – 1.4.83", title: "Importar, revisar y no perderse las noticias", points: ["Importar trades desde el reporte de MT4/MT5.", "Revisión semanal y mensual, y calendario económico con avisos."] },
-        { version: "1.4.80", title: "Notas ★ y favoritos en la nube", points: ["Notas importantes destacadas (Pro).", "Pares favoritos guardados en la cuenta."] },
+        { version: "1.4.90", title: "Programa de referidos", points: ["Códigos únicos por usuario generados en el servidor (Node.js + PostgreSQL) y canje en una transacción con FOR UPDATE.", "Anti-abuso: el premio de quien invita se libera al llegar a 5 trades cerrados, se bloquea el mismo device_id y hay tope anual.", "Probado de punta a punta contra la base de datos con usuarios temporales."] },
+        { version: "1.4.89", title: "Errores y sesiones", points: ["Errores guardados con un código estable (independiente del idioma), con migración de los datos viejos guardados como texto traducido.", "Análisis por sesión del mercado en UTC y métricas en R; lógica pura en Dart con tests unitarios."] },
+        { version: "1.4.88", title: "Menú por módulos y pantalla de cuenta", points: ["Menú lateral con módulos desplegables (estado recordado, animaciones) y un coach unificado con pestañas.", "Pantallas verificadas con renders en tests de widgets (sin desbordes a 390 px de ancho)."] },
       ],
     },
     pricing: {
@@ -326,14 +323,11 @@ export const translations = {
     },
     news: {
       title: "What's new",
-      sub: "The latest releases of the app (November 2026).",
+      sub: "The last 3 releases and how they were built.",
       items: [
-        { version: "1.4.90", title: "Invite & earn", points: ["A referral code per user: 7 days of Pro for the invited friend and for the inviter.", "The inviter's reward arrives when the friend logs 5 trades (no fake accounts)."] },
-        { version: "1.4.89", title: "Mistakes & sessions", points: ["How much each mistake you mark costs you.", "Results by market session and in R (Pro)."] },
-        { version: "1.4.88", title: "Modular menu and new account screen", points: ["Analysis, Strategy, Tools… with their submodules.", "Summary with ZenScore on top, tabbed coach and trade history closer."] },
-        { version: "1.4.85 – 1.4.87", title: "Share like a pro", points: ["Trade and weekly review images with a premium background, in chat or story format.", "Redesigned PDFs with a cover, price ladder and analytics by pair and by weekday."] },
-        { version: "1.4.81 – 1.4.83", title: "Import, review and never miss the news", points: ["Import trades from the MT4/MT5 report.", "Weekly and monthly review, and an economic calendar with alerts."] },
-        { version: "1.4.80", title: "★ notes and favorites in the cloud", points: ["Important notes starred (Pro).", "Favorite pairs saved to your account."] },
+        { version: "1.4.90", title: "Referral program", points: ["Unique per-user codes generated on the server (Node.js + PostgreSQL) and redemption in a transaction with FOR UPDATE.", "Abuse control: the inviter's reward unlocks at 5 closed trades, the same device_id is blocked and there is a yearly cap.", "Tested end to end against the database with temporary users."] },
+        { version: "1.4.89", title: "Mistakes & sessions", points: ["Mistakes stored with a stable code (language independent), migrating old data that was saved as translated text.", "Market session analysis in UTC and R-multiple metrics; pure Dart logic with unit tests."] },
+        { version: "1.4.88", title: "Modular menu and account screen", points: ["Side menu with expandable modules (remembered state, animations) and a unified tabbed coach.", "Screens verified with widget-test renders (no overflow at 390 px width)."] },
       ],
     },
     pricing: {
